@@ -1,23 +1,25 @@
-📄 Architecture Decision Log: Family Finance RAG
+# 📄 Architecture Decision Log: Family Finance RAG
 Status: Draft / Approved Date: 2026-02-11
 
-1. Frontend: Angular
-Decision: Use Angular (latest version) for the frontend application.
+## Frontend: Angular
+#### Decision: 
+Use Angular (latest version) for the frontend application.
 
-Justification:
+#### Justification:
 
-Professional Development: Strategic goal to enhance skills and portfolio (Resume Driven Development).
+- **Professional Development:** Strategic goal to enhance skills and portfolio (Resume Driven Development).
 
-Architecture: Angular's strict modularity, dependency injection, and TypeScript support are superior for building complex dashboards with data visualization, compared to more lightweight libraries.
+- **Architecture:** Angular's strict modularity, dependency injection, and TypeScript support are superior for building complex dashboards with data visualization, compared to more lightweight libraries.
 
-2. Backend Core: C# (.NET)
-Decision: ASP.NET Core Web API as the central backend service.
+## Backend Core: C# (.NET)
+#### Decision: 
+ASP.NET Core Web API as the central backend service.
 
-Justification:
+#### Justification:
 
-Security: Acts as the system's "Gatekeeper". Built-in mechanisms for Identity, JWT, and potential encryption are critical for handling sensitive financial data.
+- **Security:** Acts as the system's "Gatekeeper". Built-in mechanisms for Identity, JWT, and potential encryption are critical for handling sensitive financial data.
 
-Reliability: Strong typing and a robust ORM (EF Core) ensure transaction integrity. Python is reserved solely for AI tasks where strict typing is less critical than flexibility.
+- **Reliability:** Strong typing and a robust ORM (EF Core) ensure transaction integrity. Python is reserved solely for AI tasks where strict typing is less critical than flexibility.
 
 3. AI Service: Python
 Decision: Python (FastAPI / LangChain) as a dedicated microservice.
