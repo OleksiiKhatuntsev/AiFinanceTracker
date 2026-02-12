@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\FamilyFinance.Core\FamilyFinance.Core.csproj" />
+    <ProjectReference Include="..\FamilyFinance.Application\FamilyFinance.Application.csproj" />
+    <ProjectReference Include="..\FamilyFinance.Domain\FamilyFinance.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

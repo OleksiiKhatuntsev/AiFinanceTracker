@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="FamilyFinance.Api/FamilyFinance.Api.csproj" />
-  <Project Path="FamilyFinance.Core/FamilyFinance.Core.csproj" />
+  <Project Path="FamilyFinance.Application/FamilyFinance.Application.csproj" />
+  <Project Path="FamilyFinance.Domain/FamilyFinance.Domain.csproj" />
   <Project Path="FamilyFinance.Infrastructure/FamilyFinance.Infrastructure.csproj" />
 </Solution>

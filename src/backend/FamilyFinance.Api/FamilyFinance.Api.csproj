@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FamilyFinance.Infrastructure\FamilyFinance.Infrastructure.csproj" />
-    <ProjectReference Include="..\FamilyFinance.Core\FamilyFinance.Core.csproj" />
+    <ProjectReference Include="..\FamilyFinance.Application\FamilyFinance.Application.csproj" />
+    <ProjectReference Include="..\FamilyFinance.Domain\FamilyFinance.Domain.csproj" />
   </ItemGroup>
 
 </Project>
