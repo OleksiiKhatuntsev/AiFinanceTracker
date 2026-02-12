@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="FamilyFinance.Api/FamilyFinance.Api.csproj" />
+  <Project Path="FamilyFinance.Core/FamilyFinance.Core.csproj" />
+  <Project Path="FamilyFinance.Infrastructure/FamilyFinance.Infrastructure.csproj" />
+</Solution>
