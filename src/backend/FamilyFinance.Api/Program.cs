@@ -1,6 +1,10 @@
+using FamilyFinance.Domain.Repositories;
+using FamilyFinance.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<ITransactionRepository, FakeTransactionRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

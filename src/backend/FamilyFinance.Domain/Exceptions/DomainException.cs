@@ -1,5 +1,6 @@
 namespace FamilyFinance.Domain.Exceptions;
 
-public class DomainException(string message) : Exception(message)
+public abstract class DomainException : Exception
 {
+    protected DomainException(string message) : base(message) { }
 }
