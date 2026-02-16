@@ -26,7 +26,7 @@ public class Transaction
 
         if (string.IsNullOrWhiteSpace(merchant))
         {
-            throw new ArgumentNullException(nameof(merchant), "Merchant name is missing");
+            throw new EmptyMerchantException();
         }
 
         Id = Guid.NewGuid();
