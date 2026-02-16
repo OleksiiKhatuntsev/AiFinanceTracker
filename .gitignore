@@ -33,7 +33,7 @@ Thumbs.db
 *.log
 
 # --- AI ---
-.claude/
+**/claude/
 
 # --- Personal Info ---
 **/samples
