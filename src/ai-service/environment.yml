@@ -13,3 +13,5 @@ dependencies:
     - chromadb
     - pydantic
     - python-dotenv
+    - pdfplumber
+    - pytest
