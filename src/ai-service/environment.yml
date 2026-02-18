@@ -16,4 +16,5 @@ dependencies:
     - pdfplumber
     - httpx
     - langchain-openai
+    - langchain-google-genai
     - pytest
