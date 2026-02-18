@@ -16,8 +16,8 @@ namespace FamilyFinance.Tests.Api.Controllers
             Mock<ITransactionRepository> mockRepository = new();
             List<Transaction> transactions =
             [
-                new(100.00m, "USD", "Amazon", DateTime.UtcNow),
-                new(20.00m, "EUR", "Netflix", DateTime.UtcNow)
+                new(100.00m, "USD", "Amazon", DateTime.UtcNow, "Web"),
+                new(20.00m, "EUR", "Netflix", DateTime.UtcNow, "Web")
             ];
 
             _ = mockRepository.Setup(static repo => repo.GetAll()).Returns(transactions.AsReadOnly());

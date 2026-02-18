@@ -9,10 +9,9 @@ public class Transaction
     public string Currency { get; private set; }
     public string Merchant { get; private set; }
     public DateTime Date { get; private set; }
+    public string Category { get; private set; } = null!;
 
-    private Transaction() { }
-
-    public Transaction(decimal amount, string currency, string merchant, DateTime date)
+    public Transaction(decimal amount, string currency, string merchant, DateTime date, string category)
     {
         if (amount < 0)
         {
@@ -29,10 +28,16 @@ public class Transaction
             throw new EmptyMerchantException();
         }
 
+        if (string.IsNullOrWhiteSpace(category))
+        {
+            throw new EmptyCategoryException();
+        }
+
         Id = Guid.NewGuid();
         Amount = amount;
         Currency = currency.ToUpper();
         Merchant = merchant;
         Date = date;
+        Category = category;
     }
 }
