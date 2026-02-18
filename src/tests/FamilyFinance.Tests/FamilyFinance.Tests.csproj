@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\backend\FamilyFinance.Domain\FamilyFinance.Domain.csproj" />
     <ProjectReference Include="..\..\backend\FamilyFinance.Application\FamilyFinance.Application.csproj" />
+    <ProjectReference Include="..\..\backend\FamilyFinance.Infrastructure\FamilyFinance.Infrastructure.csproj" />
     <ProjectReference Include="..\..\backend\FamilyFinance.Api\FamilyFinance.Api.csproj" />
   </ItemGroup>
 

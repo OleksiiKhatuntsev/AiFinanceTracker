@@ -19,7 +19,7 @@ class TestNlqParse:
 
         assert response.status_code == 200
         data = response.json()
-        assert data["category"] == "groceries"
+        assert data["category"] == "Groceries"
         assert data["date_from"] == "2026-01-01"
         assert data["date_to"] == "2026-01-31"
         assert data["aggregation"] == "sum"

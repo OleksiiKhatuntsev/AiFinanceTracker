@@ -28,7 +28,7 @@ def health():
 @app.post("/nlq/parse", response_model=NlqResponse)
 def nlq_parse(request: NlqRequest):
     return NlqResponse(
-        category="магазины",
+        category="Groceries",
         date_from="2026-01-01",
         date_to="2026-01-31",
         aggregation="sum",
