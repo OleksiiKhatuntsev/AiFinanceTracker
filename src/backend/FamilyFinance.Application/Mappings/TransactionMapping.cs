@@ -13,7 +13,7 @@ public static class TransactionMapping
             entity.Currency,
             entity.Merchant,
             entity.Date,
-            "Uncategorized",
+            entity.Category,
             $"{entity.Amount:F2} {entity.Currency}"
         );
     }
@@ -24,7 +24,8 @@ public static class TransactionMapping
             dto.Amount,
             dto.Currency,
             dto.Merchant,
-            dto.Date
+            dto.Date,
+            dto.Category
         );
     }
 }

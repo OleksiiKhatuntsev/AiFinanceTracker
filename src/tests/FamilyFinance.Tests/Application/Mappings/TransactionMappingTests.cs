@@ -14,7 +14,8 @@ namespace FamilyFinance.Tests.Application.Mappings
             string currency = "USD";
             string merchant = "Amazon";
             DateTime date = DateTime.UtcNow;
-            Transaction transaction = new(amount, currency, merchant, date);
+            string category = "Web";
+            Transaction transaction = new(amount, currency, merchant, date, category);
 
             // Act
             TransactionDto dto = transaction.ToDto();
@@ -25,7 +26,7 @@ namespace FamilyFinance.Tests.Application.Mappings
             Assert.Equal(currency, dto.Currency);
             Assert.Equal(merchant, dto.Merchant);
             Assert.Equal(date, dto.Date);
-            Assert.Equal("Uncategorized", dto.Category);
+            Assert.Equal(category, dto.Category);
             Assert.Equal($"{amount:F2} {currency}", dto.FormattedAmount);
         }
 
@@ -37,14 +38,15 @@ namespace FamilyFinance.Tests.Application.Mappings
             string currency = "EUR";
             string merchant = "Supermarket";
             DateTime date = DateTime.UtcNow;
+            string category = "Groceries";
             TransactionDto dto = new(
                 Guid.NewGuid(),
                 amount,
                 currency,
                 merchant,
                 date,
-                "Groceries",
-                "200.00 EUR"
+                category,
+                $"{amount:F2} {currency}"
             );
 
             // Act
@@ -56,6 +58,7 @@ namespace FamilyFinance.Tests.Application.Mappings
             Assert.Equal(currency, result.Currency);
             Assert.Equal(merchant, result.Merchant);
             Assert.Equal(date, result.Date);
+            Assert.Equal(category, result.Category);
         }
     }
 }
