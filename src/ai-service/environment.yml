@@ -14,4 +14,6 @@ dependencies:
     - pydantic
     - python-dotenv
     - pdfplumber
+    - httpx
+    - langchain-openai
     - pytest
